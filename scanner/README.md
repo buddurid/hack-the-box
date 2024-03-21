@@ -20,7 +20,7 @@ lets remake our calcualtion but with **rbp=0x11000** (we nulled out its first by
 
 well it wouldn't be that easy right ? yeah youre right because although our binary doesnt implement stack canaries , some of the libc function do . one of them is fgets . so we need our **rbp-0x1010** to be below where the canaries . the only wayi can think we can get it done with is brute force because altough the chances are slim it's still possible . 
 
-my script worked fine(took some time though) locally and i could pop a shell  which couldnt happen due to my dear internet (char by char brute force + actual brute force which means 255*16*16 iterations which is heavy for a remote connection)
+my script worked fine(took some time though) locally and i could pop a shell  which couldnt happen due to my dear internet (char by char brute force + actual brute force which means 255 * 16 * 16 iterations which is heavy for a remote connection)
 
 hope you picked up a thing or two from this writeup ❤️️
 
